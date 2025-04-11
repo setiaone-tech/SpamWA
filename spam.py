@@ -64,5 +64,5 @@ if res['code'] == 200:
 
     for i in range(jumlah):
         res = requests.post(url, headers=headers, json=data).json()
-        print(res['message'])
+        print(f"{res['message']} Sent OTP.")
         time.sleep(delay)
